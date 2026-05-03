@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Timetable from './components/Timetable';
 import TaskManager from './components/TaskManager';
+import TaskCalendar from './components/TaskCalendar';
 import Reports from './components/Reports';
 import Login from './components/Login';
 
@@ -49,6 +50,7 @@ const App = () => {
         {activeTab === 'dashboard' && <Dashboard data={data} user={user} setActiveTab={setActiveTab} />}
         {activeTab === 'timetable' && <Timetable data={data} onUpdate={handleSave} />}
         {activeTab === 'tasks' && <TaskManager data={data} onUpdate={handleSave} notify={notify} />}
+        {activeTab === 'calendar' && <TaskCalendar data={data} />}
         {activeTab === 'reports' && <Reports data={data} />}
       </main>
     </div>

@@ -1,11 +1,12 @@
 import React from 'react';
-import { LayoutDashboard, Calendar, CheckSquare, BarChart3, LogOut, User } from 'lucide-react';
+import { LayoutDashboard, Calendar, CheckSquare, BarChart3, LogOut, User, CalendarRange } from 'lucide-react';
 
 const Sidebar = ({ activeTab, setActiveTab, onLogout, user }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'timetable', label: 'Timetable', icon: Calendar },
     { id: 'tasks', label: 'Tasks', icon: CheckSquare },
+    { id: 'calendar', label: 'Task Calendar', icon: CalendarRange },
     { id: 'reports', label: 'Reports', icon: BarChart3 },
   ];
 
